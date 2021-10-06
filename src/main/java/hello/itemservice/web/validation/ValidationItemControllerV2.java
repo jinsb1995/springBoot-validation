@@ -76,7 +76,6 @@ public class ValidationItemControllerV2 {
         if(bindingResult.hasErrors()) {
             log.info("errors = {} ", bindingResult);
             // bindingResult는 자동으로 model에 담겨 view로 넘어가기 때문에 model에 안담아도 된다.
-//            model.addAttribute("errors", errors);
             return "validation/v2/addForm";
         }
 
